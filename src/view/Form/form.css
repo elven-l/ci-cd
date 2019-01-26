@@ -1,0 +1,10 @@
+.row{
+    padding: 15px 0;
+}
+.row-event-items{
+    height: 26px;
+    line-height: 26px;
+}
+.row-event-items:nth-child(1){
+    margin-top: 15px;
+}
