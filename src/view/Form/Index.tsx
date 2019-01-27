@@ -37,7 +37,6 @@ class Index extends React.Component<object, IState> {
   {
          getLists().then((respone) =>{
              console.log('88888');
-           }
         });
             
   }
