@@ -36,15 +36,7 @@ class Index extends React.Component<object, IState> {
   public componentDidMount()
   {
          getLists().then((respone) =>{
-            if(respone.data) {
-            this.setState({
-                dataSource:respone.data,
-                pagination : {
-                    pageSize: respone.per_page,
-                    current : respone.current_page,
-                    total : respone.total
-                }
-            });
+             console.log('88888');
            }
         });
             
