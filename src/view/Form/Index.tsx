@@ -36,6 +36,7 @@ class Index extends React.Component<object, IState> {
   public componentDidMount()
   {
          getLists().then((respone) =>{
+            if(respone.data.length) {
             this.setState({
                 dataSource:respone.data,
                 pagination : {
@@ -44,6 +45,7 @@ class Index extends React.Component<object, IState> {
                     total : respone.total
                 }
             });
+           }
         });
             
   }
